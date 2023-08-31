@@ -21,11 +21,21 @@ const MEET_UPS = [
   },
 ];
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <>
-      <MeetupList meetups={MEET_UPS} />
+      <MeetupList meetups={props.meetups} />
     </>
   );
 };
+
+export async function getStaticProps() {
+  //fetch data from API
+  return {
+    props: {
+      meetups: MEET_UPS,
+    },
+  };
+}
+
 export default HomePage;

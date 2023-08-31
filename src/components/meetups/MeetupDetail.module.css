@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
+
+.detail img {
+  width: 100%;
+}
+.detail {
+  text-align: center;
+  font-family: "Inter", "sans-serif";
+}

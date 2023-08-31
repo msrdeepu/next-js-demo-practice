@@ -1,7 +1,16 @@
-import React from "react";
+import MeetupDetail from "@/components/meetups/MeetupDetail";
 
-const index = () => {
-  return <div>index</div>;
-};
+function MeetupDetails() {
+  return (
+    <>
+      <MeetupDetail
+        image="https://c4.wallpaperflare.com/wallpaper/955/962/485/guitar-wallpaper-preview.jpg"
+        title="First Meetup"
+        address="village, Town, City, State"
+        description={"This is the first meetup description"}
+      />
+    </>
+  );
+}
 
-export default index;
+export default MeetupDetails;
